@@ -13,7 +13,9 @@ import {
   HelpCircle,
   GitCompare,
   AlertTriangle,
-  CheckSquare
+  CheckSquare,
+  Book,
+  Map
 } from 'lucide-react';
 import Card from '../Common/Card';
 
@@ -96,6 +98,23 @@ const ModuleGrid: React.FC = () => {
       icon: HelpCircle,
       color: 'primary',
       description: 'Test your knowledge with interactive quizzes'
+    }
+  ];
+
+  const resources = [
+    {
+      key: 'books',
+      path: '/books',
+      icon: Book,
+      color: 'gold',
+      description: 'Curated collection of authentic Islamic books'
+    },
+    {
+      key: 'roadmap',
+      path: '/roadmap',
+      icon: Map,
+      color: 'navy',
+      description: 'Structured learning paths for all levels'
     }
   ];
 
@@ -187,6 +206,13 @@ const ModuleGrid: React.FC = () => {
           title="Practical Tools" 
           modules={practicalTools} 
           delay={0.6} 
+        />
+
+        {/* Resources */}
+        <ModuleSection 
+          title="Resources" 
+          modules={resources} 
+          delay={0.8} 
         />
       </div>
     </section>

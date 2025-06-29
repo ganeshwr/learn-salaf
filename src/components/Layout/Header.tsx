@@ -11,6 +11,7 @@ const Header: React.FC = () => {
   const [isLanguageOpen, setIsLanguageOpen] = React.useState(false);
   const [isLearningOpen, setIsLearningOpen] = React.useState(false);
   const [isToolsOpen, setIsToolsOpen] = React.useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = React.useState(false);
 
   const mainNavigationItems = [
     { key: 'home', path: '/' },
@@ -32,10 +33,16 @@ const Header: React.FC = () => {
     { key: 'quiz', path: '/quiz' },
   ];
 
+  const resources = [
+    { key: 'books', path: '/books' },
+    { key: 'roadmap', path: '/roadmap' },
+  ];
+
   const allNavigationItems = [
     ...mainNavigationItems,
     ...learningModules,
-    ...practicalTools
+    ...practicalTools,
+    ...resources
   ];
 
   const languages = [
@@ -52,6 +59,7 @@ const Header: React.FC = () => {
   const closeAllDropdowns = () => {
     setIsLearningOpen(false);
     setIsToolsOpen(false);
+    setIsResourcesOpen(false);
     setIsLanguageOpen(false);
   };
 
@@ -94,6 +102,7 @@ const Header: React.FC = () => {
                 onClick={() => {
                   setIsLearningOpen(!isLearningOpen);
                   setIsToolsOpen(false);
+                  setIsResourcesOpen(false);
                   setIsLanguageOpen(false);
                 }}
                 className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors"
@@ -138,6 +147,7 @@ const Header: React.FC = () => {
                 onClick={() => {
                   setIsToolsOpen(!isToolsOpen);
                   setIsLearningOpen(false);
+                  setIsResourcesOpen(false);
                   setIsLanguageOpen(false);
                 }}
                 className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors"
@@ -175,6 +185,51 @@ const Header: React.FC = () => {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Resources Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => {
+                  setIsResourcesOpen(!isResourcesOpen);
+                  setIsLearningOpen(false);
+                  setIsToolsOpen(false);
+                  setIsLanguageOpen(false);
+                }}
+                className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors"
+              >
+                <span>Resources</span>
+                <ChevronDown className={`w-4 h-4 transition-transform ${isResourcesOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {isResourcesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50"
+                  >
+                    <div className="py-1">
+                      {resources.map((item) => (
+                        <Link
+                          key={item.key}
+                          to={item.path}
+                          onClick={() => {
+                            setIsResourcesOpen(false);
+                            closeAllDropdowns();
+                          }}
+                          className={`block px-4 py-2 text-sm hover:bg-primary-50 ${
+                            location.pathname === item.path ? 'bg-primary-100 text-primary-800' : 'text-gray-700'
+                          }`}
+                        >
+                          {t(`navigation.${item.key}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </nav>
 
           {/* Language Selector & Mobile Menu */}
@@ -186,6 +241,7 @@ const Header: React.FC = () => {
                   setIsLanguageOpen(!isLanguageOpen);
                   setIsLearningOpen(false);
                   setIsToolsOpen(false);
+                  setIsResourcesOpen(false);
                 }}
                 className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors"
               >
@@ -287,6 +343,25 @@ const Header: React.FC = () => {
               <div className="py-2 border-t border-gray-100">
                 <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Tools</h3>
                 {practicalTools.map((item) => (
+                  <Link
+                    key={item.key}
+                    to={item.path}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      location.pathname === item.path
+                        ? 'bg-primary-100 text-primary-800'
+                        : 'text-gray-600 hover:text-primary-700 hover:bg-primary-50'
+                    }`}
+                  >
+                    {t(`navigation.${item.key}`)}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Resources */}
+              <div className="py-2 border-t border-gray-100">
+                <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Resources</h3>
+                {resources.map((item) => (
                   <Link
                     key={item.key}
                     to={item.path}
