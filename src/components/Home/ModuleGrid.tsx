@@ -20,7 +20,7 @@ import Card from '../Common/Card';
 const ModuleGrid: React.FC = () => {
   const { t } = useTranslation();
 
-  const modules = [
+  const mainModules = [
     {
       key: 'what_is_salafiyyah',
       path: '/what-is-salafiyyah',
@@ -41,7 +41,10 @@ const ModuleGrid: React.FC = () => {
       icon: Shield,
       color: 'navy',
       description: 'Clarify common myths with evidence-based responses'
-    },
+    }
+  ];
+
+  const learningModules = [
     {
       key: 'timeline',
       path: '/timeline',
@@ -62,7 +65,10 @@ const ModuleGrid: React.FC = () => {
       icon: GitCompare,
       color: 'navy',
       description: 'Compare Salafi methodology with other approaches'
-    },
+    }
+  ];
+
+  const practicalTools = [
     {
       key: 'bidah',
       path: '/bidah',
@@ -104,6 +110,47 @@ const ModuleGrid: React.FC = () => {
     }
   };
 
+  const ModuleSection = ({ title, modules, delay = 0 }: { title: string; modules: any[]; delay?: number }) => (
+    <div className="mb-16">
+      <motion.h3
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay }}
+        className="text-2xl font-bold text-gray-900 mb-8 text-center"
+      >
+        {title}
+      </motion.h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {modules.map((module, index) => {
+          const IconComponent = module.icon;
+          return (
+            <Card key={module.key} delay={delay + (index * 0.1)}>
+              <Link to={module.path} className="block p-6 group">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className={`p-3 rounded-lg ${getColorClasses(module.color)} group-hover:scale-110 transition-transform`}>
+                    <IconComponent className="w-6 h-6" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
+                    {t(`navigation.${module.key}`)}
+                  </h4>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  {module.description}
+                </p>
+                <div className="flex items-center text-primary-600 font-medium">
+                  <span>{t('common.learn_more')}</span>
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            </Card>
+          );
+        })}
+      </div>
+    </div>
+  );
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,34 +168,26 @@ const ModuleGrid: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {modules.map((module, index) => {
-            const IconComponent = module.icon;
-            return (
-              <Card key={module.key} delay={index * 0.1}>
-                <Link to={module.path} className="block p-6 group">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className={`p-3 rounded-lg ${getColorClasses(module.color)} group-hover:scale-110 transition-transform`}>
-                      <IconComponent className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
-                      {t(`navigation.${module.key}`)}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    {module.description}
-                  </p>
-                  <div className="mt-4 flex items-center text-primary-600 font-medium">
-                    <span>{t('common.learn_more')}</span>
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </Link>
-              </Card>
-            );
-          })}
-        </div>
+        {/* Main Foundation Modules */}
+        <ModuleSection 
+          title="Foundation" 
+          modules={mainModules} 
+          delay={0.2} 
+        />
+
+        {/* Learning Modules */}
+        <ModuleSection 
+          title="Learning Modules" 
+          modules={learningModules} 
+          delay={0.4} 
+        />
+
+        {/* Practical Tools */}
+        <ModuleSection 
+          title="Practical Tools" 
+          modules={practicalTools} 
+          delay={0.6} 
+        />
       </div>
     </section>
   );
