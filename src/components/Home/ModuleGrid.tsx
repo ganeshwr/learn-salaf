@@ -10,7 +10,10 @@ import {
   Users, 
   MessageCircle, 
   BookMarked, 
-  HelpCircle 
+  HelpCircle,
+  GitCompare,
+  AlertTriangle,
+  CheckSquare
 } from 'lucide-react';
 import Card from '../Common/Card';
 
@@ -52,6 +55,27 @@ const ModuleGrid: React.FC = () => {
       icon: Users,
       color: 'gold',
       description: 'Read authentic quotes from respected scholars'
+    },
+    {
+      key: 'comparison',
+      path: '/comparison',
+      icon: GitCompare,
+      color: 'navy',
+      description: 'Compare Salafi methodology with other approaches'
+    },
+    {
+      key: 'bidah',
+      path: '/bidah',
+      icon: AlertTriangle,
+      color: 'primary',
+      description: 'Learn about religious innovations to avoid'
+    },
+    {
+      key: 'checklist',
+      path: '/checklist',
+      icon: CheckSquare,
+      color: 'gold',
+      description: 'Distinguish authentic from fake Salafi practices'
     },
     {
       key: 'glossary',

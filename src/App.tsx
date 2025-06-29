@@ -8,6 +8,9 @@ import Misconceptions from './pages/Misconceptions';
 import CoreBeliefs from './pages/CoreBeliefs';
 import Timeline from './pages/Timeline';
 import Scholars from './pages/Scholars';
+import Comparison from './pages/Comparison';
+import Bidah from './pages/Bidah';
+import Checklist from './pages/Checklist';
 import Glossary from './pages/Glossary';
 import Quiz from './pages/Quiz';
 
@@ -22,6 +25,9 @@ function App() {
           <Route path="misconceptions" element={<Misconceptions />} />
           <Route path="timeline" element={<Timeline />} />
           <Route path="scholars" element={<Scholars />} />
+          <Route path="comparison" element={<Comparison />} />
+          <Route path="bidah" element={<Bidah />} />
+          <Route path="checklist" element={<Checklist />} />
           <Route path="glossary" element={<Glossary />} />
           <Route path="quiz" element={<Quiz />} />
         </Route>

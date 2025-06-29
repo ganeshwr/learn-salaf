@@ -17,6 +17,9 @@ const Header: React.FC = () => {
     { key: 'misconceptions', path: '/misconceptions' },
     { key: 'timeline', path: '/timeline' },
     { key: 'scholars', path: '/scholars' },
+    { key: 'comparison', path: '/comparison' },
+    { key: 'bidah', path: '/bidah' },
+    { key: 'checklist', path: '/checklist' },
     { key: 'glossary', path: '/glossary' },
     { key: 'quiz', path: '/quiz' },
   ];
@@ -49,7 +52,7 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
-            {navigationItems.map((item) => (
+            {navigationItems.slice(0, 8).map((item) => (
               <Link
                 key={item.key}
                 to={item.path}
