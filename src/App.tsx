@@ -13,6 +13,8 @@ import Bidah from './pages/Bidah';
 import Checklist from './pages/Checklist';
 import Glossary from './pages/Glossary';
 import Quiz from './pages/Quiz';
+import Books from './pages/Books';
+import Roadmap from './pages/Roadmap';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="checklist" element={<Checklist />} />
           <Route path="glossary" element={<Glossary />} />
           <Route path="quiz" element={<Quiz />} />
+          <Route path="books" element={<Books />} />
+          <Route path="roadmap" element={<Roadmap />} />
         </Route>
       </Routes>
     </Router>
