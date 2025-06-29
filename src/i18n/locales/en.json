@@ -1,0 +1,137 @@
+{
+  "navigation": {
+    "home": "Home",
+    "what_is_salafiyyah": "What is Salafiyyah?",
+    "core_beliefs": "Core Beliefs",
+    "misconceptions": "Misconceptions",
+    "timeline": "Timeline",
+    "scholars": "Scholar Quotes",
+    "glossary": "Glossary",
+    "quiz": "Quiz"
+  },
+  "hero": {
+    "title": "Understanding the Manhaj Salaf",
+    "subtitle": "The Path of the Righteous Predecessors",
+    "description": "Learn about the authentic methodology of following the Quran and Sunnah according to the understanding of the Salaf as-Salih",
+    "cta": "Begin Learning",
+    "language": "Language"
+  },
+  "home": {
+    "welcome": "Welcome to Manhaj Salaf",
+    "intro": "This interactive educational platform is designed to clarify misconceptions and provide authentic knowledge about the methodology of the Salaf as-Salih (Righteous Predecessors).",
+    "modules_title": "Learning Modules",
+    "start_journey": "Start Your Journey"
+  },
+  "what_is_salafiyyah": {
+    "title": "What is Salafiyyah?",
+    "definition": "Salafiyyah is the methodology of following Islam according to the understanding of the Salaf as-Salih - the first three generations of Muslims who were praised by the Prophet ﷺ.",
+    "three_generations": "The Three Praised Generations",
+    "sahabah": "The Companions (Sahabah)",
+    "sahabah_desc": "Those who met the Prophet ﷺ, believed in him, and died as Muslims",
+    "tabieen": "The Followers (Tabi'een)",
+    "tabieen_desc": "The generation that followed the Companions",
+    "taba_tabieen": "Followers of the Followers (Taba' at-Tabi'een)",
+    "taba_tabieen_desc": "The third generation praised by the Prophet ﷺ"
+  },
+  "misconceptions": {
+    "title": "Common Misconceptions",
+    "subtitle": "Clarifying False Claims with Evidence",
+    "wahabi_myth": "\"Salafis are Wahabi\"",
+    "wahabi_truth": "Salafiyyah existed since the time of the Prophet ﷺ. The term 'Wahabi' is a modern label that doesn't represent the actual methodology.",
+    "harsh_myth": "\"Salafis are harsh\"",
+    "harsh_truth": "True Salafi methodology emphasizes wisdom, kindness, and gradual teaching as demonstrated by the Prophet ﷺ and his companions.",
+    "political_myth": "\"Salafis are political\"",
+    "political_truth": "Authentic Salafi methodology focuses on purification of faith and following the Sunnah, not political movements.",
+    "takfir_myth": "\"Salafis make takfir easily\"",
+    "takfir_truth": "Proper Salafi methodology is extremely cautious about takfir and follows strict conditions established by scholars."
+  },
+  "core_beliefs": {
+    "title": "Core Beliefs",
+    "tawheed": "Tawheed",
+    "tawheed_desc": "Pure monotheism - worshipping Allah alone without partners",
+    "sunnah": "Following the Sunnah",
+    "sunnah_desc": "Adhering to the teachings and practices of Prophet Muhammad ﷺ",
+    "salaf_understanding": "Understanding of the Salaf",
+    "salaf_understanding_desc": "Interpreting Islam according to the methodology of the righteous predecessors",
+    "avoiding_bidah": "Avoiding Bid'ah",
+    "avoiding_bidah_desc": "Staying away from innovations in religion that were not from the time of the Prophet ﷺ"
+  },
+  "timeline": {
+    "title": "Historical Timeline",
+    "subtitle": "Journey Through the Blessed Generations",
+    "description": "Explore the historical journey of the Salaf as-Salih through an interactive timeline showcasing key events, scholars, and developments in Islamic history.",
+    "expected_date": "Q2 2024",
+    "features": {
+      "interactive_timeline": "Interactive timeline with key historical events",
+      "key_events": "Major milestones in Islamic scholarship",
+      "scholar_profiles": "Detailed profiles of prominent Salafi scholars",
+      "historical_context": "Historical context and background information",
+      "visual_journey": "Visual journey through the generations"
+    },
+    "prophetic_era": "Prophetic Era",
+    "sahabah_era": "Era of the Companions",
+    "tabieen_era": "Era of the Tabi'een",
+    "taba_tabieen_era": "Era of Taba' at-Tabi'een",
+    "later_scholars": "Later Scholars",
+    "all_events": "All Events",
+    "event_details": "Event Details",
+    "historical_significance": "Historical Significance",
+    "key_figures": "Key Figures",
+    "location": "Location",
+    "year": "Year"
+  },
+  "scholars": {
+    "description": "Access authentic quotes and teachings from respected Salafi scholars throughout history, organized by topics and themes for easy learning.",
+    "expected_date": "Q2 2024",
+    "features": {
+      "authentic_quotes": "Verified quotes from renowned scholars",
+      "scholar_biographies": "Comprehensive biographies and backgrounds",
+      "topic_categories": "Organized by Islamic topics and themes",
+      "search_filter": "Advanced search and filtering options",
+      "audio_recitations": "Audio recitations of selected quotes"
+    }
+  },
+  "glossary": {
+    "description": "Comprehensive dictionary of Islamic terms, Arabic phrases, and Salafi terminology with pronunciations and detailed explanations.",
+    "expected_date": "Q1 2024",
+    "features": {
+      "comprehensive_terms": "Extensive collection of Islamic terminology",
+      "arabic_pronunciation": "Arabic text with pronunciation guides",
+      "search_functionality": "Powerful search and lookup features",
+      "category_filters": "Filter by categories and topics",
+      "related_terms": "Cross-references to related concepts"
+    }
+  },
+  "quiz": {
+    "description": "Test and reinforce your knowledge with interactive quizzes covering various aspects of Salafi methodology and Islamic fundamentals.",
+    "expected_date": "Q3 2024",
+    "features": {
+      "interactive_questions": "Engaging multiple-choice and true/false questions",
+      "progress_tracking": "Track your learning progress over time",
+      "difficulty_levels": "Questions for beginners to advanced learners",
+      "instant_feedback": "Immediate explanations for correct answers",
+      "knowledge_certificates": "Earn certificates upon completion"
+    }
+  },
+  "coming_soon": {
+    "under_development": "Under Development",
+    "working_hard": "We are working hard to bring you this feature. Stay tuned for updates!",
+    "expected": "Expected",
+    "what_to_expect": "What to Expect",
+    "continue_learning": "Continue Your Learning Journey",
+    "explore_other_modules": "While we work on this module, explore our other available content to deepen your understanding.",
+    "back_to_home": "Back to Home"
+  },
+  "common": {
+    "learn_more": "Learn More",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "close": "Close",
+    "true": "True",
+    "false": "False",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "try_again": "Try Again"
+  }
+}

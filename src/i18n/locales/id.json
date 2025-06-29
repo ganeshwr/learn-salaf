@@ -1,0 +1,137 @@
+{
+  "navigation": {
+    "home": "Beranda",
+    "what_is_salafiyyah": "Apa itu Salafiyyah?",
+    "core_beliefs": "Keyakinan Inti",
+    "misconceptions": "Kesalahpahaman",
+    "timeline": "Garis Waktu",
+    "scholars": "Kutipan Ulama",
+    "glossary": "Glosarium",
+    "quiz": "Kuis"
+  },
+  "hero": {
+    "title": "Memahami Manhaj Salaf",
+    "subtitle": "Jalan Para Pendahulu yang Salih",
+    "description": "Pelajari metodologi otentik mengikuti Al-Quran dan Sunnah menurut pemahaman Salaf as-Salih",
+    "cta": "Mulai Belajar",
+    "language": "Bahasa"
+  },
+  "home": {
+    "welcome": "Selamat Datang di Manhaj Salaf",
+    "intro": "Platform pendidikan interaktif ini dirancang untuk mengklarifikasi kesalahpahaman dan memberikan ilmu otentik tentang metodologi Salaf as-Salih (Para Pendahulu yang Salih).",
+    "modules_title": "Modul Pembelajaran",
+    "start_journey": "Mulai Perjalanan Anda"
+  },
+  "what_is_salafiyyah": {
+    "title": "Apa itu Salafiyyah?",
+    "definition": "Salafiyyah adalah metodologi mengikuti Islam sesuai pemahaman Salaf as-Salih - tiga generasi pertama umat Islam yang dipuji oleh Nabi ﷺ.",
+    "three_generations": "Tiga Generasi yang Dipuji",
+    "sahabah": "Para Sahabat (Sahabah)",
+    "sahabah_desc": "Mereka yang bertemu Nabi ﷺ, beriman kepadanya, dan meninggal sebagai Muslim",
+    "tabieen": "Para Pengikut (Tabi'een)",
+    "tabieen_desc": "Generasi yang mengikuti para Sahabat",
+    "taba_tabieen": "Pengikut Para Pengikut (Taba' at-Tabi'een)",
+    "taba_tabieen_desc": "Generasi ketiga yang dipuji oleh Nabi ﷺ"
+  },
+  "misconceptions": {
+    "title": "Kesalahpahaman Umum",
+    "subtitle": "Mengklarifikasi Tuduhan Palsu dengan Bukti",
+    "wahabi_myth": "\"Salafi itu Wahabi\"",
+    "wahabi_truth": "Salafiyyah sudah ada sejak zaman Nabi ﷺ. Istilah 'Wahabi' adalah label modern yang tidak mewakili metodologi sebenarnya.",
+    "harsh_myth": "\"Salafi itu keras\"",
+    "harsh_truth": "Metodologi Salafi yang benar menekankan hikmah, kebaikan, dan pengajaran bertahap seperti yang ditunjukkan oleh Nabi ﷺ dan para sahabatnya.",
+    "political_myth": "\"Salafi itu politis\"",
+    "political_truth": "Metodologi Salafi otentik berfokus pada penyucian akidah dan mengikuti Sunnah, bukan gerakan politik.",
+    "takfir_myth": "\"Salafi mudah mentakfir\"",
+    "takfir_truth": "Metodologi Salafi yang benar sangat berhati-hati tentang takfir dan mengikuti syarat ketat yang ditetapkan ulama."
+  },
+  "core_beliefs": {
+    "title": "Keyakinan Inti",
+    "tawheed": "Tauhid",
+    "tawheed_desc": "Monotheisme murni - menyembah Allah saja tanpa sekutu",
+    "sunnah": "Mengikuti Sunnah",
+    "sunnah_desc": "Berpegang pada ajaran dan praktek Nabi Muhammad ﷺ",
+    "salaf_understanding": "Pemahaman Salaf",
+    "salaf_understanding_desc": "Menafsirkan Islam sesuai metodologi para pendahulu yang salih",
+    "avoiding_bidah": "Menghindari Bid'ah",
+    "avoiding_bidah_desc": "Menjauhi inovasi dalam agama yang tidak ada pada zaman Nabi ﷺ"
+  },
+  "timeline": {
+    "title": "Garis Waktu Sejarah",
+    "subtitle": "Perjalanan Melalui Generasi yang Diberkahi",
+    "description": "Jelajahi perjalanan sejarah Salaf as-Salih melalui garis waktu interaktif yang menampilkan peristiwa penting, ulama, dan perkembangan dalam sejarah Islam.",
+    "expected_date": "Q2 2024",
+    "features": {
+      "interactive_timeline": "Garis waktu interaktif dengan peristiwa sejarah penting",
+      "key_events": "Tonggak sejarah utama dalam keilmuan Islam",
+      "scholar_profiles": "Profil detail ulama Salafi terkemuka",
+      "historical_context": "Konteks sejarah dan informasi latar belakang",
+      "visual_journey": "Perjalanan visual melalui generasi-generasi"
+    },
+    "prophetic_era": "Era Kenabian",
+    "sahabah_era": "Era Para Sahabat",
+    "tabieen_era": "Era Tabi'een",
+    "taba_tabieen_era": "Era Taba' at-Tabi'een",
+    "later_scholars": "Ulama Kemudian",
+    "all_events": "Semua Peristiwa",
+    "event_details": "Detail Peristiwa",
+    "historical_significance": "Signifikansi Sejarah",
+    "key_figures": "Tokoh Kunci",
+    "location": "Lokasi",
+    "year": "Tahun"
+  },
+  "scholars": {
+    "description": "Akses kutipan otentik dan ajaran dari ulama Salafi yang dihormati sepanjang sejarah, diorganisir berdasarkan topik dan tema untuk pembelajaran yang mudah.",
+    "expected_date": "Q2 2024",
+    "features": {
+      "authentic_quotes": "Kutipan terverifikasi dari ulama terkenal",
+      "scholar_biographies": "Biografi dan latar belakang yang komprehensif",
+      "topic_categories": "Diorganisir berdasarkan topik dan tema Islam",
+      "search_filter": "Opsi pencarian dan filter lanjutan",
+      "audio_recitations": "Rekaman audio dari kutipan terpilih"
+    }
+  },
+  "glossary": {
+    "description": "Kamus komprehensif istilah Islam, frasa Arab, dan terminologi Salafi dengan pengucapan dan penjelasan detail.",
+    "expected_date": "Q1 2024",
+    "features": {
+      "comprehensive_terms": "Koleksi ekstensif terminologi Islam",
+      "arabic_pronunciation": "Teks Arab dengan panduan pengucapan",
+      "search_functionality": "Fitur pencarian dan lookup yang kuat",
+      "category_filters": "Filter berdasarkan kategori dan topik",
+      "related_terms": "Referensi silang ke konsep terkait"
+    }
+  },
+  "quiz": {
+    "description": "Uji dan perkuat pengetahuan Anda dengan kuis interaktif yang mencakup berbagai aspek metodologi Salafi dan dasar-dasar Islam.",
+    "expected_date": "Q3 2024",
+    "features": {
+      "interactive_questions": "Pertanyaan pilihan ganda dan benar/salah yang menarik",
+      "progress_tracking": "Lacak kemajuan pembelajaran Anda dari waktu ke waktu",
+      "difficulty_levels": "Pertanyaan untuk pemula hingga pembelajar lanjutan",
+      "instant_feedback": "Penjelasan langsung untuk jawaban yang benar",
+      "knowledge_certificates": "Dapatkan sertifikat setelah menyelesaikan"
+    }
+  },
+  "coming_soon": {
+    "under_development": "Sedang Dikembangkan",
+    "working_hard": "Kami sedang bekerja keras untuk menghadirkan fitur ini. Nantikan pembaruannya!",
+    "expected": "Diperkirakan",
+    "what_to_expect": "Apa yang Diharapkan",
+    "continue_learning": "Lanjutkan Perjalanan Belajar Anda",
+    "explore_other_modules": "Sementara kami mengerjakan modul ini, jelajahi konten lain yang tersedia untuk memperdalam pemahaman Anda.",
+    "back_to_home": "Kembali ke Beranda"
+  },
+  "common": {
+    "learn_more": "Pelajari Lebih Lanjut",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "continue": "Lanjutkan",
+    "close": "Tutup",
+    "true": "Benar",
+    "false": "Salah",
+    "correct": "Benar!",
+    "incorrect": "Salah",
+    "try_again": "Coba Lagi"
+  }
+}
